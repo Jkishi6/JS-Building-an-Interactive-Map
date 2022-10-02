@@ -1,8 +1,6 @@
 // create map
-const myMap = L.map('map', {
-    center: [48.868672, 2.342130],
-    zoom: 12,
-});
+const myMap = L.map('map').setView([48.868672, 2.342130],12)
+
 
 // add openstreetmap tiles
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
